@@ -3,138 +3,377 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>El Roof</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+    <title>El Roof Records</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="estilos/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
   </head>
-
   <body>
-    <header>REDES</header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <header class="container-fluid bg-dark d-flex justify-content-center">
+      <p class="text-light mb-0 p-2 fs-6">
+        Contactanos elroofrecords@gmail.com
+      </p>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-dark p-3 bg-dark">
       <div class="container-fluid">
-        <a href="" class="navbar-brand text-white fw-semibold fs-4"> El Roof Records</a>
+        <a class="navbar-brand" href="#menuSuperior">
+          <span class="logoelroof"
+            ><img
+              src="imagenes/logoelroof.png"
+              alt="logo-elroof"
+              width="60"
+              height="60"
+              style="border-radius: 50%"
+          /></span>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#menuLateral"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuSuperior"
+          aria-controls="menuSuperior"
+          aria-expanded="false"
+          aria-label="toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <section
-          class="offcanvas offcanvas-start bg-dark text-white"
-          id="menuLateral"
-          tabindex="-1"
-        >
-          <div class="offcanvas-header" data-bs-theme="dark">
-            <h5 class="offcanvas.title text-white">El Roof</h5>
-            <button
-              class="btn-close"
-              type="button"
-              aria-label="Close"
-              data-bs-dismiss="offcanvas"
-            ></button>
-          </div>
 
-          <div
-            class="offcanvas-body d-flex flex-column justify-content-between px-0"
-          >
-            <ul class="navbar-nav fs-5 justify-content-evenly">
-              <li class="nav-item p-3 py-md-1">
-                <a class="nav-link" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item p-3 py-md-1">
-                <a class="nav-link" href="#servicios">Servicios</a>
-              </li>
-              <li class="nav-item p-3 py-md-1">
-                <a class="nav-link" href="#productos">Productos</a>
-              </li>
-              <li class="nav-item p-3 py-md-1">
-                <a class="nav-link" href="#nosotros">Nosotros</a>
-              </li>
-              <li class="nav-item p-3 py-md-1">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-            </ul>
-
-            <div class="d-md-none align-self-center py-3">
-              <a href=""><i class="bi bi-facebook px-2 text-white fs-2"></i></a>
-              <a href=""
-                ><i class="bi bi-instagram px-2 text-white fs-2"></i
-              ></a>
-              <a href=""><i class="bi bi-whatsapp px-2 text-white fs-2"></i></a>
-            </div>
+        <div class="collapse navbar-collapse" id="menuSuperior">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0 fs-5">
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item p-3 py-md-1">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <div class="d-md-none py-3 text-center">
+            <a
+              href="https://www.facebook.com/elroofrecords/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              ><i class="bi bi-facebook px-2 text-white fs-2"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/elroofrecords/?hl=es-la"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              ><i class="bi bi-instagram px-2 text-white fs-2"></i
+            ></a>
+            <a
+              href="https://web.whatsapp.com/send?phone=573107625817&amp;text=Hola,+me+gustaría+ampliar+la+información+que+encontré+en+su+pagina+web"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              ><i class="bi bi-whatsapp px-2 text-white fs-2"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@ElRoofRecords"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              ><i class="bi bi-youtube px-2 text-white fs-2"></i>
+            </a>
           </div>
-        </section>
+        </div>
       </div>
     </nav>
 
+    <div id="carouselelroof" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="imagenes/elroof1.jpg"
+            class="d-block w-100 img-fluid"
+            alt="fotografia elroof"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="imagenes/elroof2.jpg"
+            class="d-block w-100 img-fluid"
+            alt="fotografia elroof"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="imagenes/elroof3.png"
+            class="d-block w-100 img-fluid"
+            alt="fotografia elroof"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="imagenes/elroof4.jpg"
+            class="d-block w-100 img-fluid"
+            alt="fotografia elroof"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselelroof"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselelroof"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <main>
-      <section id="inicio">
-        <h2>Inicio</h2>
-        <p>
-          El Roof es un proyecto creado en 2018. Actuamos como una aceleradora
-          de artistas emergentes que les ofrece conocimiento, herramientas y
-          recursos que ayuden a su profesionalización.
+      <section class="w-90 mx-auto text-center pt-3" id="inicio">
+        <h1 class="p-3 fs-2 border-top border-2">
+          En El Roof Records,<span class="fw-bold">
+            convertimos tus sueños en realidad.</span
+          >
+        </h1>
+        <p class="p-3 fs-4">
+          <span class="fw-bold"> El Roof</span> es un proyecto creado en 2018.
+          Actuamos como una aceleradora de artistas emergentes que les ofrece
+          conocimiento, herramientas y recursos que ayuden a su
+          profesionalización.
         </p>
       </section>
+
       <section id="servicios">
-        <h2>Servicios</h2>
-        <p>
+        <h2 class="p-3 fs-2 fw-bolder">Servicios</h2>
+        <p class="p-3 fs-5">
           Contamos con un equipo con el conocimiento y la tecnología para
           brindar la mejor calidad a los artistas que necesitan dar un salto
-          cualitativo que impulse sus carreras y les ofrecemos servicios de
-          producción musical, grabación profesional, mezcla de audio,
-          masterización. distribución y estrategias de promoción y marketing.
+          cualitativo que impulse sus carreras y les ofrecemos servicios de:
         </p>
       </section>
-      <section id="productos">
-        <h2>Productos</h2>
+
+      <section class="w-100">
+        <div class="row w-100 mx-auto" id="servicios-linea1">
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
+          >
+            <img
+              src="imagenes/iconproduccion.png"
+              alt="produccionicon"
+              width="120"
+              height="100"
+            />
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1 fw-bold">Producción musical</h3>
+              <p class="px-4">
+                Es el proceso de crear y desarrollar música, que abarca la
+                composición, arreglo, grabación y selección de sonidos para
+                producir una obra musical final.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
+          >
+            <img
+              src="imagenes/icongrabacion.png"
+              alt="grabacionicon"
+              width="110"
+              height="90"
+            />
+
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1 fw-bold">Grabación profesional</h3>
+              <p class="px-4">
+                Es la captura de sonidos de alta calidad mediante equipos
+                especializados durante sesiones de grabación, con el objetivo de
+                obtener resultados profesionales y nítidos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row w-100 mx-auto" id="servicios-linea2">
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
+          >
+            <img
+              src="imagenes/iconmezcla.png"
+              alt="mezclaicon"
+              width="110"
+              height="90"
+            />
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1 fw-bold">Mezcla de audio</h3>
+              <p class="px-4">
+                Es la combinación y ajuste de las pistas grabadas para lograr un
+                equilibrio sonoro óptimo, incorporando efectos y procesos para
+                mejorar la calidad y coherencia del sonido.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
+          >
+            <img
+              src="imagenes/iconmaster.png"
+              alt="masterizacionicon"
+              width="110"
+              height="90"
+            />
+
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1 fw-bold">Masterización</h3>
+              <p class="px-4">
+                Es el proceso final de preparación de la mezcla para su
+                distribución, que incluye la optimización del sonido general,
+                ajustes de volumen y la creación de un producto final cohesivo y
+                listo para su reproducción.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row w-100 mx-auto" id="servicios-linea3">
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap"
+          >
+            <img
+              src="imagenes/iconalbum.png"
+              alt="marketingicon"
+              width="110"
+              height="90"
+            />
+            <div>
+              <h3 class="fs-5 mt-4 px-4 pb-1 fw-bold">
+                Distribución y estrategias de promoción y marketing
+              </h3>
+              <p class="px-4">
+                Es la colocación y disponibilidad de la música en diversas
+                plataformas y formatos para su acceso y compra por parte del
+                público a traves de acciones para dar a conocer la música,
+                aumentar su visibilidad y atraer a un público más amplio, que
+                pueden incluir campañas publicitarias, redes sociales,
+                colaboraciones y eventos promocionales.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="nosotros">
-        <h2>Nosotros</h2>
-        <article>
-          En octubre de 2020 fuimos seleccionados para participar de MusicaLab,
-          encuentro de transformación digital liderado por la Fundación SURA.
-          Fuimos seleccionados entre 306 postulaciones de Colombia, México y
-          Chile. Este reconocimiento nos fue otorgado por nuestro enfoque en
-          música emergente urbana y la representatividad que tenemos en términos
-          de diversidad territorial, comunidad y género, y nos sirvió para
-          recibir formación en habilidades digitales aplicadas al sector
-          musical. En los años 2020 y 2022 fuimos ganadores de la beca “Es
-          Cultura Local” de la localidad de Barrios Unidos e IDARTES con
-          nuestros proyectos “Manos Unidas por Barrios Unidos” y “Artistas
-          Unidos X Barrios Unidos” respectivamente, iniciativas con las que
-          generamos empleo a personas que viven de las industrias creativas en
-          la localidad. En el año 2021 participamos en “Unidos por el arte” una
-          iniciativa de la galería Casa Dmente y la localidad de Barrios Unidos
-          como alternativa para mejorar la capacidad de gestión y aportar a la
-          recuperación de encadenamientos productivos locales afectados por la
-          pandemia; y participamos en GritaLab, el primer laboratorio de
-          co-creación y colaboración para la industria musical en Bogotá. Este
-          mismo año estuvimos presentes por primera vez como agentes de la
-          industria en Circulart y el BOmm, donde regularmente hacemos parte de
-          las ruedas de negocios. Estos eventos son claves para promover la
-          música colombiana independiente a nivel nacional e internacional y
-          fortalecer el ecosistema musical. Actualmente hacemos parte del
-          programa Aldea Bogotá una iniciativa de Innpulsa Colombia que busca
-          fortalecer el emprendimiento cultural y creativo por medio de la
-          consolidación de estructura empresarial, sofisticación e innovación. A
-          lo largo de estos años hemos tenido la oportunidad de trabajar con más
-          de 100 artistas, en su mayoría enfocados en géneros urbanos.
-        </article>
+
+      <h2 class="p-3 fs-2 fw-bolder" id="productos">Productos</h2>
+      <section class="productos-disponibles p-3">
+        <img src="imagenes/combo1.jpg" alt="combo1" />
+        <img src="imagenes/combo2.jpg" alt="combo2" />
+        <img src="imagenes/combo3.jpg" alt="combo3" />
+        <img src="imagenes/grabacion.jpg" alt="grabacion" />
+      </section>
+
+      <section>
+        <div class="container w-50 m-auto text-center" id="nosotros">
+          <h1 class="mt-3 border-top border-2 mb-5 fs-2">
+            Somos un equipo con
+            <span class="fw-bold">resultados grandes.</span>
+          </h1>
+        </div>
+
+        <div class="mt-5 text-center">
+          <img
+            id="equipoRoof"
+            src="imagenes/equipo.jpg"
+            alt="equipo"
+            class="img-fluid p-3"
+          />
+        </div>
       </section>
     </main>
-    <aside><h2>Proyectos El Roof</h2></aside>
-    <footer><p>El Roof Records © 2023</p></footer>
+
+    <aside>
+      <div class="container w-75 m-auto text-center">
+        <p class="mt-3 m-3 fs-3">
+          ¿Tienes una melodía en tu cabeza que está ansiosa por ser escuchada?
+          <span class="fw-bold">
+            ¡Visitanos! Deja que tu música hable por ti</span
+          >
+        </p>
+      </div>
+      <iframe
+        class="p-3"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6680678669463!2d-74.08221722502098!3d4.6531544953216795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b4575e8a3ef%3A0x51ca5727d002cb82!2sEl%20Roof%20Records!5e0!3m2!1ses-419!2sco!4v1701039427215!5m2!1ses-419!2sco"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </aside>
+
+    <footer class="container-fluid p-4 bg-dark">
+      <div class="row justify-content-center col-12 text-center">
+        <div>
+          <a href="#inicio" class="btn btn-sm btn-outline-light fw-bold"
+            >Ir al inicio</a
+          >
+        </div>
+        <div class="col-12 d-flex justify-content-center p-4">
+          <a
+            href="https://www.facebook.com/elroofrecords/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="text-white"
+          >
+            <i class="bi bi-facebook px-2 fs-2"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/elroofrecords/?hl=es-la"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="text-white"
+          >
+            <i class="bi bi-instagram px-2 fs-2"></i>
+          </a>
+          <a
+            href="https://web.whatsapp.com/send?phone=573107625817&amp;text=Hola,+me+gustaría+ampliar+la+información+que+encontré+en+su+pagina+web"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="text-white"
+          >
+            <i class="bi bi-whatsapp px-2 fs-2"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@ElRoofRecords"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="text-white"
+          >
+            <i class="bi bi-youtube px-2 fs-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 text-white text-center">
+        <p>El Roof Records &copy; Todos Los Derechos Reservados 2023</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Montserrat:wght@200&display=swap");
+
+:root {
+  --color-principal: #8e8e8e;
+  --color-secundario: #b2b2b2;
+  --color-fondo: #e9ecef;
+  --fuente-base: "Montserrat", sans-serif;
+  --fuente-titulos: "Montserrat Alternates", sans-serif;
+}
+
+/*Estilos del body*/
+body {
+  font-family: var(--fuente-base);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-fondo);
+}
+
+/*Estilos del navbar*/
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-nav li:hover {
+  background-color: var(--color-principal);
+  border-radius: 2rem;
+}
+
+/*Estilos de letras*/
+
+#inicio {
+  font-family: var(--fuente-titulos);
+}
+
+h2 {
+  font-family: var(--fuente-titulos);
+}
+
+/*Estilos section servicios*/
+#servicios-linea1,
+#servicios-linea2,
+#servicios-linea3 {
+  background-color: var(--color-secundario);
+}
+
+/*Estilos imagenes y multimedia*/
+
+.carousel-inner {
+  max-height: 39rem;
+}
+
+.productos-disponibles {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.productos-disponibles img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.productos-disponibles img:hover {
+  width: 200px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  #servicios-linea3 {
+    justify-content: center;
+    text-align: center;
+  }
+}
