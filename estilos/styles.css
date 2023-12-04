@@ -16,7 +16,14 @@ body {
   background-color: var(--color-fondo);
 }
 
+
 /*Estilos del navbar*/
+
+.navbar {
+  background-image: url(../imagenes/fondo_roof.png);
+  background-size: cover;
+  background-position: center;
+}
 
 .navbar-toggler {
   border: none;
@@ -31,6 +38,7 @@ body {
   border-radius: 2rem;
 }
 
+
 /*Estilos de letras*/
 
 #inicio {
@@ -41,17 +49,57 @@ h2 {
   font-family: var(--fuente-titulos);
 }
 
-/*Estilos section servicios*/
-#servicios-linea1,
-#servicios-linea2,
-#servicios-linea3 {
+/*Estilos secciones*/
+
+#servicios {
   background-color: var(--color-secundario);
+}
+
+.catalogo {
+  background-color: var(--color-secundario);
+}
+
+.card {
+  background-color: var(--color-fondo);
+}
+
+.card-img-top {
+  border-radius: 50px;
+  padding: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border: none;
+  border-radius: 50px;
+}
+
+.card-title {
+  font-family: var(--fuente-titulos);
+  font-size: 1.5rem;
+}
+.card-body {
+  padding: 25px;
+  margin-top: 0px;
+  font-size: 1rem;
+}
+.productos-roof {
+  background-color: var(--color-secundario);
+}
+
+/*Estilos Footer*/
+
+.footer {
+  background-image: url(../imagenes/fondo_roof.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /*Estilos imagenes y multimedia*/
 
 .carousel-inner {
-  max-height: 39rem;
+  max-height: 30rem;
 }
 
 .productos-disponibles {
@@ -80,8 +128,11 @@ iframe {
 }
 
 @media screen and (min-width: 1024px) {
-  #servicios-linea3 {
-    justify-content: center;
-    text-align: center;
+  .catalogo {
+    padding: 0rem 10rem 0rem 10rem;
+  }
+
+  .carousel-item {
+    background-image: url(../imagenes/fondo_roof.png);
   }
 }
